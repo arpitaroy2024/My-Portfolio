@@ -1,0 +1,241 @@
+/* styles.css */
+
+/* Smooth scroll for anchor navigation */
+html {
+    scroll-behavior: smooth;
+}
+ /* Navbar customization */
+ /*
+.navbar {
+    box-shadow: 0 2px 8px rgb(216, 106, 247);
+    transition: background 0.3s;
+   
+}
+*/
+.custom-navbar {
+  background: linear-gradient(90deg, #c0e6ff 0%, #f3f9fd 50%, #e9e4ff 100%);
+  box-shadow: 0 2px 8px rgba(40,70,166,0.08);
+}
+
+.navbar .nav-link {
+  color: #2846a6 !important;
+  font-weight: 500;
+  transition: color 0.3s, background 0.3s, border-radius 0.2s;
+  border-radius: 24px;
+  padding: 6px 18px;
+}
+
+/* Active nav-link on scroll/click */
+.navbar .nav-link.active {
+    background: linear-gradient(90deg, #4169e1 40%, #2846a6 100%);
+    color: #fff !important;
+    font-weight: 700;
+    box-shadow: 0 2px 10px rgba(40,70,166,0.08);
+    border-radius: 22px;
+}
+
+/* If you want a simpler blue shade: */
+.navbar .nav-link.active {
+    background: #2846a6;
+    color: #fff !important;
+    font-weight: 700;
+    border-radius: 22px;
+}
+
+
+/* Optional: on hover, highlight */
+.navbar .nav-link:hover {
+  background: #4169e1;
+  color: #fff !important;
+}
+
+
+
+.navbar .navbar-brand {
+    font-size: 2rem;         /* Larger font size */
+    font-family: 'Pacifico', 'Montserrat', Arial, sans-serif; /* Stylish font fallback */
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #2846a6 !important;  /* Deep blue for better contrast */
+    text-shadow: 0 2px 10px rgba(40,70,166,0.09);
+    padding-left: 12px;
+}
+
+
+/* Section padding for easy scroll viewing */
+section {
+    padding-top: 80px;
+    padding-bottom: 60px;
+
+}
+
+/* Hero Section */
+#home {
+    background: linear-gradient(135deg, #f3f9fd 60%, #e9e4ff 100%);
+}
+
+#home h1 {
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+
+#home .lead {
+    font-size: 1.3rem;
+    color: #555;
+}
+
+/* About Section */
+#about h2,
+#skills h2,
+#experiences h2,
+#projects h2,
+#contact h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #2846a6;
+}
+
+/* Project Cards */
+#projects .card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(40,70,166, 0.07);
+    margin-bottom: 2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#about {
+    background: linear-gradient(90deg, #f3f9fd 0%, #deebfa 100%);
+}
+
+#skills {
+    background: linear-gradient(90deg, #e9e4ff 0%, #ede7f7 100%);
+}
+.cxx-badge {
+    display: inline-block;
+    padding: 0.3em 0.85em;
+    font-weight: 700;
+    font-size: 1.9rem;
+    color: #1f4068;
+    /* background: linear-gradient(90deg, #1f4068 0%, #5a98d0 100%); */
+    border-radius: 10px;
+    letter-spacing: 2px;
+    /*box-shadow: 0 2px 8px rgba(40,70,166,0.08);*/
+}
+
+#experiences {
+    background: linear-gradient(90deg, #fef6e4 0%, #f9e7dc 100%);
+}
+
+#projects {
+    background: linear-gradient(90deg, #e0ffe0 0%, #d9eaf7 100%);
+}
+
+#contact {
+    background: linear-gradient(90deg, #e4f7fa 0%, #ffeef9 100%);
+}
+
+section {
+    border-radius: 18px;
+    box-shadow: 0 4px 28px rgba(40,70,166,0.07);
+    margin-top: 36px;
+}
+
+.skill-card {
+    border-radius: 18px;
+    background: linear-gradient(135deg, #fbfbff 80%, #f3f9fd 100%);
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.skill-card:hover {
+    box-shadow: 0 8px 30px rgba(40,70,166,0.17);
+    transform: translateY(-6px) scale(1.04);
+}
+.skill-name {
+    font-size: 1.1rem;
+    margin-top: 2px;
+    color: #2846a6;
+}
+
+
+
+
+.project-card {
+  border-radius: 18px;
+  background: linear-gradient(135deg, #e6f6ee 70%, #e9e4ff 100%);
+  transition: box-shadow 0.2s, transform 0.2s;
+  margin-bottom: 2em;
+}
+.project-card:hover {
+  box-shadow: 0 8px 30px rgba(40,70,166,0.18);
+  transform: translateY(-4px) scale(1.03);
+}
+.card-title {
+  color: #2846a6;
+}
+.card-text {
+  min-height: 84px;  /* Keeps cards same height */
+}
+
+
+#projects .card-title {
+    font-weight: 600;
+    color: #2846a6;
+}
+
+.experience-card {
+  border-radius: 18px;
+  background: linear-gradient(108deg, #f7fcff 60%, #e4fffc 100%);
+  margin-bottom: 2em;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.experience-card:hover {
+  box-shadow: 0 8px 28px rgba(40,70,166,0.13);
+  transform: translateY(-3px) scale(1.02);
+}
+.experience-card .badge {
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.5em 0.85em;
+}
+
+/* Buttons */
+.btn-primary {
+    background: #2846a6;
+    border: none;
+    border-radius: 24px;
+    padding: 0.6rem 2.2rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    transition: background 0.2s;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background: #4169e1;
+}
+
+/* Footer */
+footer {
+    font-size: 1rem;
+    color: #eee;
+    background: #222;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 2rem;
+    }
+    section {
+        padding-top: 56px;
+        padding-bottom: 40px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #f3f9fd;
+}
+::-webkit-scrollbar-thumb {
+    background: #b1c6ed;
+    border-radius: 5px;
+}
